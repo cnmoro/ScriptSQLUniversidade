@@ -52,7 +52,7 @@ INSERT INTO disciplina (nome,periodo,professor) VALUES ("Comunicação Visual",8
 INSERT INTO disciplina (nome,periodo,professor) VALUES ("Dispositivos Móveis",9,"Felipe");
 INSERT INTO disciplina (nome,periodo,professor) VALUES ("Desenvolvimento Web",10,"Mariana");
 
-CREATE TABLE aluno_matriculado (
+CREATE TABLE matricula (
 	id INT NOT NULL AUTO_INCREMENT,
     id_aluno INT NOT NULL,
     id_disciplina INT NOT NULL,
@@ -61,24 +61,24 @@ CREATE TABLE aluno_matriculado (
     FOREIGN KEY (id_disciplina) REFERENCES disciplina (id)
 );
 
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (1,2);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (1,4);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (2,2);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (2,3);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (3,2);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (4,4);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (4,5);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (5,1);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (5,2);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (5,3);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (6,2);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (6,3);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (7,6);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (8,7);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (8,8);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (8,9);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (8,10);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (9,5);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (9,3);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (10,8);
-INSERT INTO aluno_matriculado (id_aluno,id_disciplina) VALUES (10,9);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (1,2);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (1,4);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (2,2);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (2,3);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (3,2);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (4,4);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (4,5);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (5,1);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (5,2);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (5,3);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (6,2);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (6,3);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (7,6);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (8,7);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (8,8);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (8,9);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (8,10);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (9,5);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (9,3);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (10,8);
+INSERT INTO matricula (id_aluno,id_disciplina) VALUES (10,9);
